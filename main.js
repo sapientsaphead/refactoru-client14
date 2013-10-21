@@ -79,8 +79,8 @@ var Repeater = (function Repeater() {
 			}
 			return array.join('');
 	}
-	var repeatFunctionTwice = function repeatFunctionTwice(f) {
-		var repeatF = f() + f()
+	var repeatFunctionTwice = function repeatFunctionTwice(f,n) {
+		var repeatF = repeatFunction(f,n) + repeatFunction(f,n)
 		return repeatF;
 	}
 	return {

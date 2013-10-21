@@ -30,10 +30,10 @@ describe('repeatMore', function() {
 })
 
 describe('repeatFunctionTwice', function() {
-  it('should repeat the function twice', function() {
+  it('should repeat the repeatFunction twice', function() {
   	var str ='oh';
   	var write = function() { str += 'hey'; };
-  	Repeater.repeatFunctionTwice(write);
-  	expect(str).toEqual("ohheyhey")
+  	Repeater.repeatFunctionTwice(write, 3);
+  	expect(str).toEqual("ohheyheyheyheyheyhey")
   })
 })
